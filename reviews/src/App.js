@@ -30,7 +30,7 @@ function App() {
           recommend: review.recommend,
           value: review.value,
           quality: review.quality,
-          easeOfUse: review.easeOfUse,
+          easeOfUse: review.easeofuse,
           image: review.image,
           cons: review.cons,
           pros: review.pros
@@ -41,7 +41,7 @@ function App() {
 
       setLoading(false);
 }
-  
+
 if(loading === true){
   console.log('loading')
   return(
@@ -50,10 +50,8 @@ if(loading === true){
 } else {
   return (
     <AppContainer>
-      {/* <div>Reviews</div> */}
-      {/* <img src={reviews[0].image} alt="" /> */}
-      <ResultsOverview />
-      <ListOfReviews />
+      <ResultsOverview reviews={reviews} />
+      <ListOfReviews reviews={reviews} />
 
     </AppContainer>
   );
@@ -63,8 +61,13 @@ if(loading === true){
 export default App;
 
 const AppContainer = styled.div`
+  /* max-width: 1500px; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  margin-left: 90px;
+  margin-right: 90px;
+  max-width: 1500px;
   img{
     height: 200px;
   }

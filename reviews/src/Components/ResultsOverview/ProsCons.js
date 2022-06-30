@@ -14,10 +14,10 @@ export default ProsCons;
 
 const ProsConsContainer = styled.div`
      background-color: white;
-     height: 250px;
+     height: 247px;
      width: 240px;
      border: 1px solid lightgray;
-     border-radius: 5px;
+     border-radius: 4px;
 `
 const Title = styled.h5`
      font-weight: normal;
