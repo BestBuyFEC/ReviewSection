@@ -15,10 +15,11 @@ export default Features;
 
 const FeaturesContainer = styled.div`
      background-color: white;
-     height: 250px;
-     width: 280px;
+     height: 247px;
+     width: 305px;
      border: 1px solid lightgray;
-     border-radius: 5px;
+     border-radius: 4px;
+     margin-right: 15px;
 `
 
 const Title = styled.h5`

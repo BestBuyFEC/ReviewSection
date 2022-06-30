@@ -6,19 +6,19 @@ import Features from './Features';
 import ProsCons from './ProsCons';
 import WouldRecommend from './WouldRecommend';
 
-function ResultsOverview() {
+function ResultsOverview({ reviews }) {
   return (
     <ResultsOverviewContainer>
 
         <ResultsOverviewTop>
-          <CustomerReviews />
-          <Features />
-          <ProsCons />
+          <CustomerReviews reviews={reviews}/>
+          <Features reviews={reviews}/>
+          <ProsCons reviews={reviews}/>
         </ResultsOverviewTop>
 
         <ResultsOverviewBottom>
-          <WouldRecommend />
-          <CustomerImagesCarousel />
+          <WouldRecommend reviews={reviews}/>
+          <CustomerImagesCarousel reviews={reviews}/>
         </ResultsOverviewBottom>
 
     </ResultsOverviewContainer>
@@ -29,16 +29,16 @@ export default ResultsOverview;
 
 const ResultsOverviewContainer = styled.div`
   background-color: #f0f2f4;
-  height: 410px;
-  width: 1050px;
-  padding: 20px;
+  height: 368px;
+  width: 1270px;
+  padding: 17px;
 `
 
 const ResultsOverviewTop = styled.div`
   display: flex;
-  justify-content: space-between;
 `
 
 const ResultsOverviewBottom = styled.div`
+  margin-top: 15px;
   display: flex;
 `
