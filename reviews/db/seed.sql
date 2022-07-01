@@ -12,7 +12,8 @@ VALUES (
 4,
 5,
 5,
-'https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/d245e28b7e5b6d068324fbe7d34ef417.jpg',
+ARRAY['https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/3ce5f1723d5c54022e30fa33d66029ee.jpg',
+'https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/d245e28b7e5b6d068324fbe7d34ef417.jpg'],
 'price'
 );
 
@@ -27,7 +28,9 @@ VALUES (
 5,
 5,
 5,
-'https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/3e1ac3da89e37ee2b765d098b91bc25a.jpg'
+ARRAY['https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/82ec6c2ca7829f5fc3e483e2976ad215.jpg',
+'https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/3e1ac3da89e37ee2b765d098b91bc25a.jpg',
+'https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/46ae9826fe8ae8858877493d1025cef1.jpg']
 );
 
 INSERT INTO reviews (sku, name, title, rating, review_body, recommend, value, quality, easeOfUse, image)
@@ -41,5 +44,5 @@ VALUES (
 5,
 5,
 5,
-'https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/46ae9826fe8ae8858877493d1025cef1.jpg'
+ARRAY['https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/46ae9826fe8ae8858877493d1025cef1.jpg']
 );

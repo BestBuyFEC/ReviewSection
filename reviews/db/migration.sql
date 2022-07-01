@@ -17,7 +17,7 @@ CREATE TABLE reviews (
      value SMALLINT,
      quality SMALLINT,
      easeOfUse SMALLINT,
-     image TEXT,
+     image VARCHAR[],
      cons VARCHAR(15),
      pros VARCHAR(15) 
 );

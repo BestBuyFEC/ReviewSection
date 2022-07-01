@@ -129,6 +129,10 @@ const WriteAReviewBtn = styled.button`
      border: none;
      border-radius: 4px;
      margin-top: 25px;
+     :hover{
+          cursor: pointer;
+          background-color: #001e73;
+     }
 `
 
 const ProgressCheckBoxContainer = styled.div`

@@ -32,6 +32,7 @@ const ResultsOverviewContainer = styled.div`
   height: 368px;
   width: 1270px;
   padding: 17px;
+  margin-top: 20px;
 `
 
 const ResultsOverviewTop = styled.div`

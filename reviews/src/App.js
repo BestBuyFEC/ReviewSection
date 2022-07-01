@@ -37,7 +37,7 @@ function App() {
         }
       ))))
       .catch((error) => console.log(error))
-      console.log(reviews)
+      // console.log(reviews[0].image)
 
       setLoading(false);
 }
@@ -50,9 +50,10 @@ if(loading === true){
 } else {
   return (
     <AppContainer>
+      <Collapsible tabIndex={1} trigger='Reviews' triggerSibling={<DownArrowIcon/>} transitionTime={200} overflowWhenOpen={'auto'}>
       <ResultsOverview reviews={reviews} />
       <ListOfReviews reviews={reviews} />
-
+      </Collapsible>
     </AppContainer>
   );
 }
@@ -68,6 +69,7 @@ const AppContainer = styled.div`
   margin-left: 90px;
   margin-right: 90px;
   max-width: 1500px;
+  overflow: hidden;
   img{
     height: 200px;
   }
