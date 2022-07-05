@@ -30,6 +30,6 @@ function ListOfReviews({ reviews }) {
 export default ListOfReviews;
 
 const ListOfReviewsContainer = styled.div`
-  width: 1270px;
+  /* width: 1270px; */
   margin-bottom: 50px;
 `

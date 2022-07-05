@@ -30,7 +30,7 @@ export default ResultsOverview;
 const ResultsOverviewContainer = styled.div`
   background-color: #f0f2f4;
   height: 368px;
-  width: 1270px;
+  /* width: 1270px; */
   padding: 17px;
   margin-top: 20px;
 `
