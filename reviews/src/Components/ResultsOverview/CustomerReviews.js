@@ -128,7 +128,7 @@ const WriteAReviewBtn = styled.button`
      padding: 7px 30px;
      border: none;
      border-radius: 4px;
-     margin-top: 25px;
+     margin-top: 10px;
      :hover{
           cursor: pointer;
           background-color: #001e73;

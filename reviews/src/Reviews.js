@@ -5,6 +5,8 @@ import { ChevronDown } from '@styled-icons/bootstrap';
 import Collapsible from 'react-collapsible';
 import ResultsOverview from './Components/ResultsOverview/ResultsOverview';
 import ListOfReviews from './Components/ListOfReviews/ListOfReviews';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import WriteAReview from './Components/WriteAReview';
 
 function App() {
   
@@ -49,12 +51,18 @@ if(loading === true){
   )
 } else {
   return (
-    <AppContainer>
-      <Collapsible tabIndex={1} trigger='Reviews' triggerSibling={<DownArrowIcon/>} transitionTime={200} overflowWhenOpen={'auto'}>
-      <ResultsOverview reviews={reviews} />
-      <ListOfReviews reviews={reviews} />
+    <BrowserRouter>
+      <AppContainer>
+        <Collapsible tabIndex={1} trigger='Reviews' triggerSibling={<DownArrowIcon/>} transitionTime={200} overflowWhenOpen={'auto'}>
+        <ResultsOverview reviews={reviews} />
+        <ListOfReviews reviews={reviews} />
       </Collapsible>
+      <Routes>
+          <Route path='/writeareview' element={<WriteAReview />} />
+        </Routes>
     </AppContainer>
+    </BrowserRouter>
+
   );
 }
 }
@@ -62,13 +70,12 @@ if(loading === true){
 export default App;
 
 const AppContainer = styled.div`
-  /* max-width: 1500px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 90px;
-  margin-right: 90px;
-  max-width: 1500px;
+  /* margin-left: 90px;
+  margin-right: 90px; */
+  /* max-width: 1500px; */
   overflow: hidden;
   img{
     height: 200px;

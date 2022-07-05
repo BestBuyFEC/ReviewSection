@@ -143,7 +143,7 @@ const ReviewCardLeftContainer = styled.div`
 const ReviewCardRightContainer = styled.div`
      display: flex;
      flex-direction: column;
-     width: 1050px;
+     /* width: 1050px; */
 `
 const RatingAndTitleContainer = styled.div`
      display: flex;
